@@ -1,0 +1,44 @@
+:root {
+/* COLOUR */
+    --mainColour:#1e1e1e;
+    --secondaryColour:rgb(209, 145, 27);
+    --tertiaryColour:rgb(121, 121, 121);
+/* FONT */
+    --mainFont:montserrat;
+/* BOX SHADOW */
+    --shadowTopColour: black ;
+    --shadowBottomColour: white ;
+    --shadowSize:12px 12px 16px;
+    --shadowTop:var(--shadowSize) var(--shadowTopColour) ;
+    --shadowBottom:var(--shadowSize) var(--shadowBottomColour) ;
+}
+ 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+ 
+    background-color: var(--mainColour);
+    font-family: var(--mainFont);
+    color:var(--tertiaryColour);
+    text-align: center;
+}
+
+
+h1,p   {
+    margin: 1rem;
+}
+
+img {
+
+width: 100vw;
+height: auto;
+border: 1px solid var(--tertiaryColour);
+border-radius: 10px;
+padding: 1rem;
+ 
+
+}

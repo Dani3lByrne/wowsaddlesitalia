@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400|Halant:400');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap');
+
+:root {
+--mainFont:"cocogoose";
+--black:#2B2B2B;
+--gold:#C57627;
+--white:#E5E5E5;
+--lightBlack:#373737;
+--blue:#2779C5;
+}
+
+@font-face {
+    font-family: cocogoose;
+    src: url(./cocogoose/Cocogoose\ Pro\ Semilight-trial.ttf);
+  }
+  @font-face {
+    font-family: cocogooseThin;
+    src: url(./cocogoose/Cocogoose\ Pro\ Thin-trial.ttf);
+  }
+
+  @font-face {
+    font-family: coolvetica;
+    src: url(./coolvetica/coolvetica\ rg.ttf);
+  }
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+    
+html, body {
+font-family: var(--mainFont);
+background-color:var(--lightBlack);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+.boxes > p {
+
+    font-family:"coolvetica" ;
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+
+.indexContainer {
+    height: 100%;
+    display: grid;
+    grid-template-rows:20vh 45vh 35vh;
+}
+
+.header {
+    background-color:var(--black);
+    padding: 1.5rem 0;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    }
+
+.box > img {
+    width:100%;
+    border-radius: 10px;
+    border:3px solid var(--gold);
+}
+
+.footer {
+    background-color: var(--black);
+    display: grid;
+    align-content: center;
+}
+
+.title {
+    color: var(--gold);
+    font-size: 1.2rem;
+}
+
+.strapline {
+    color: var(--white);
+    font-size: 1.4rem;
+    padding: 0.5rem 0rem;
+}
+
+.mainButtons {
+
+    display: grid;
+    justify-content: center;
+    row-gap: 0.5rem;
+}
+
+.mainButton {
+padding: 0.8rem 3rem;    
+border: 1px solid var(--gold);
+border-radius: 15px;
+background-color: var(--black);
+color: var(--white);
+width: 100%;
+}
+
+
+
+/* designStart vars */
+
+.heading {
+
+    color:var(--white);
+    background-color: var(--black);
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+    text-transform: uppercase;
+}
+
+.subHeading {
+    color: var(--gold);
+}
+
+li {
+
+    color:var(--white)
+}
+
+.contactButton {
+
+    position: absolute;
+    bottom: 0.9rem;
+    right: 0;
+    padding: 0.6rem;
+    padding-left: 1rem;
+    border:none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--blue);
+    color:var(--white);
+}
+
+
+  
+.boxes {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    /* align-items: flex-start; */
+    row-gap: 1em;
+    column-gap: 0.5em;
+    padding: 1rem 0.2rem;
+    
+  
+
+}
+
+.boxes > * {
+
+    flex: 1 1 20em;
+    flex-wrap: wrap;
+}
+
+
+.box > h3 {
+    color: var(--gold);
+    padding-bottom: 0.8em;
+    text-transform: uppercase;
+}
+
+.box > p {
+    color: var(--white);
+    padding-top: 1em;
+    text-align: left;
+}
+
+.box {
+    max-width: 400px ;
+    text-align: center;
+    border: 1px solid var(--gold);
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    background-color: var(--black);
+}
+
+ 

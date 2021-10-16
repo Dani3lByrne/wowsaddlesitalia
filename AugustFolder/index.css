@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400|Halant:400');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap');
+
+
+
+
+:root {
+--mainFont:"montserrat";
+--black:#1e1e1e;
+--gold:#C57627;
+--white:#E5E5E5;
+--lightBlack:#1a1a1a;
+--blue:#2779C5;
+}
+
+/* @font-face {
+    font-family: cocogoose;
+    src: url(./cocogoose/Cocogoose\ Pro\ Semilight-trial.ttf);
+  } */
+
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+    
+
+
+
+html, body {
+font-family: var(--mainFont);
+background-color:var(--lightBlack);
+}
+.indexContainer {
+    height: 100%;
+    display: grid;
+    grid-template-rows:25vh 40vh 35vh;
+}
+
+.header {
+background-color:var(--black);
+padding: 1.5rem 0;
+text-align: center;
+display: grid;
+align-content: center;
+/* border-bottom: 1px solid var(--gold); */
+
+
+ 
+}
+
+ 
+
+ .main img {
+   width: 100%;  
+   max-width: 450px; 
+ 
+   border-radius: 8px;
+}
+
+ 
+
+.footer {
+    background-color: var(--black);
+    display: grid;
+    align-content: center;
+}
+
+.title {
+    color: var(--gold);
+    font-size: 1.2rem;
+}
+
+.strapline {
+    color: var(--white);
+    font-size: 1.4rem;
+    padding: 0.5rem 0rem;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.main {
+
+    display: flex;
+    justify-content: center;
+    background-color: var(--lightBlack);
+    padding: 18px;
+    
+    margin: 5px;
+} 
+
+
+.mainButtons {
+
+    display: grid;
+    justify-content: center;
+    row-gap: 0.5rem;
+}
+
+.mainButton {
+padding: 0.8rem 3rem;    
+border: 1px solid var(--gold);
+border-radius: 8px;
+background-color: var(--black);
+color: var(--white);
+width: 100%;
+border-radius: 8px;
+background: #1e1e1e;
+box-shadow: inset 20px 20px 60px #1a1a1a,
+            inset -20px -20px 60px #232323;
+}
+
+
+
+/* designStart vars */
+
+.heading {
+
+    color:var(--white);
+    background-color: var(--black);
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid var(--gold);
+    border-bottom: 1px solid var(--gold);
+}
+
+.subHeading {
+    color: var(--gold);
+}
+
+li {
+
+    color:var(--white)
+}
+
+.contactButton {
+
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0;
+    padding: 0.6rem;
+    padding-left: 1rem;
+    border:none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: var(--blue);
+    color:var(--white);
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+  
+
+.box > h3 {
+    color: var(--gold);
+}
+
+.box > p {
+    color: var(--white);
+}
+
+.box {
+
+    text-align: center;
+    border: 1px solid var(--gold);
+    padding: 1rem;
+}
+
+ 
